@@ -1,0 +1,15 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Page 1</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h1>Page 1</h1>
+  <button ion-button (click)="onGoBack()">Go back</button>
+  <button ion-button navPop>Go back (directive navPop)</button>
+  <button ion-button (click)="onGoToHome()" icon-left><ion-icon name="home"></ion-icon>Go Home</button>
+</ion-content>

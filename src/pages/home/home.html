@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Home</h1>
+  <button ion-button (click)="onGoToPageOne()" full>Go page 1</button>
+  <button ion-button (click)="onGoToPageTwo()" full>Go page 2</button>
+  <!-- with directive -->
+  <button ion-button [navPush]="pageTwo" [navParams]="{myParam:'my param value'}" full>Go page 2 (directive [navPush])</button>
+  <button ion-button (click)="onGoToPageThree()" full>Go page 3 (lifecyle)</button>
+
+</ion-content>
